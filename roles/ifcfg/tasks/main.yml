@@ -18,5 +18,7 @@
 - name: Generating ifcfg files
   template:
     src: ifcfg.j2
-    dest: "/etc/sysconfig/network-scripts/ifcfg-{{ item.key }}"
+    dest: "/etc/sysconfig/network-scripts/ifcfg-{{ ifcfg_item.key }}"
   with_dict: "{{ ifcfg_ifcfg }}"
+  loop_control:
+    loop_var: ifcfg_item
