@@ -1,77 +1,77 @@
 # {{ ansible_managed }}
 
-{% if item.value.device is defined %}
-DEVICE="{{ item.value.device }}"
+{% if ifcfg_item.value.device is defined %}
+DEVICE="{{ ifcfg_item.value.device }}"
 {% endif %}
-{% if item.value.type is defined %}
-TYPE="{{ item.value.type }}"
+{% if ifcfg_item.value.type is defined %}
+TYPE="{{ ifcfg_item.value.type }}"
 {% endif %}
-{% if item.value.onboot is defined %}
-ONBOOT="{{ item.value.onboot }}"
+{% if ifcfg_item.value.onboot is defined %}
+ONBOOT="{{ ifcfg_item.value.onboot }}"
 {% endif %}
-{% if item.value.bootproto is defined %}
-BOOTPROTO="{{ item.value.bootproto }}"
+{% if ifcfg_item.value.bootproto is defined %}
+BOOTPROTO="{{ ifcfg_item.value.bootproto }}"
 {% endif %}
-{% if item.value.ipaddr is defined %}
-IPADDR="{{ item.value.ipaddr }}"
+{% if ifcfg_item.value.ipaddr is defined %}
+IPADDR="{{ ifcfg_item.value.ipaddr }}"
 {% endif %}
-{% if item.value.mask is defined %}
-NETMASK="{{ item.value.mask }}"
+{% if ifcfg_item.value.mask is defined %}
+NETMASK="{{ ifcfg_item.value.mask }}"
 {% endif %}
-{% if item.value.network is defined %}
-NETWORK="{{ item.value.network }}"
+{% if ifcfg_item.value.network is defined %}
+NETWORK="{{ ifcfg_item.value.network }}"
 {% endif %}
-{% if item.value.bcast is defined %}
-BROADCAST="{{ item.value.bcast }}"
+{% if ifcfg_item.value.bcast is defined %}
+BROADCAST="{{ ifcfg_item.value.bcast }}"
 {% endif %}
-{% if item.value.onparent is defined %}
-ONPARENT="{{ item.value.onparent }}"
+{% if ifcfg_item.value.onparent is defined %}
+ONPARENT="{{ ifcfg_item.value.onparent }}"
 {% endif %}
-{% if item.value.hwaddr is defined %}
-HWADDR="{{ item.value.hwaddr }}"
+{% if ifcfg_item.value.hwaddr is defined %}
+HWADDR="{{ ifcfg_item.value.hwaddr }}"
 {% endif %}
-{% if item.value.metric is defined %}
-METRIC="{{ item.value.metric }}"
+{% if ifcfg_item.value.metric is defined %}
+METRIC="{{ ifcfg_item.value.metric }}"
 {% endif %}
-{% if item.value.mtu is defined %}
-MTU="{{ item.value.mtu }}"
+{% if ifcfg_item.value.mtu is defined %}
+MTU="{{ ifcfg_item.value.mtu }}"
 {% endif %}
-{% if item.value.ethtool_opts is defined %}
-ETHTOOL_OPTS="{{ item.value.ethtool_opts }}"
+{% if ifcfg_item.value.ethtool_opts is defined %}
+ETHTOOL_OPTS="{{ ifcfg_item.value.ethtool_opts }}"
 {% endif %}
-{% if item.value.bonding_opts is defined %}
-BONDING_OPTS="{{ item.value.bonding_opts }}"
+{% if ifcfg_item.value.bonding_opts is defined %}
+BONDING_OPTS="{{ ifcfg_item.value.bonding_opts }}"
 {% endif %}
-{% if item.value.master is defined %}
-MASTER="{{ item.value.master }}"
+{% if ifcfg_item.value.master is defined %}
+MASTER="{{ ifcfg_item.value.master }}"
 {% endif %}
-{% if item.value.slave is defined %}
-SLAVE="{{ item.value.slave }}"
+{% if ifcfg_item.value.slave is defined %}
+SLAVE="{{ ifcfg_item.value.slave }}"
 {% endif %}
-{% if item.value.vlan is defined %}
-VLAN="{{ item.value.vlan }}"
+{% if ifcfg_item.value.vlan is defined %}
+VLAN="{{ ifcfg_item.value.vlan }}"
 {% endif %}
-{% if item.value.gateway is defined %}
-GATEWAY="{{ item.value.gateway }}"
+{% if ifcfg_item.value.gateway is defined %}
+GATEWAY="{{ ifcfg_item.value.gateway }}"
 {% endif %}
-{% if item.value.nm_controlled is defined %}
-NM_CONTROLLED="{{ item.value.nm_controlled }}"
+{% if ifcfg_item.value.nm_controlled is defined %}
+NM_CONTROLLED="{{ ifcfg_item.value.nm_controlled }}"
 {% endif %}
-{% if item.value.delay is defined %}
-DELAY="{{ item.value.delay }}"
+{% if ifcfg_item.value.delay is defined %}
+DELAY="{{ ifcfg_item.value.delay }}"
 {% endif %}
-{% if item.value.userctl is defined %}
-USERCTL="{{ item.value.userctl }}"
+{% if ifcfg_item.value.userctl is defined %}
+USERCTL="{{ ifcfg_item.value.userctl }}"
 {% endif %}
-{% if item.value.peerdns is defined %}
-PEERDNS="{{ item.value.peerdns }}"
+{% if ifcfg_item.value.peerdns is defined %}
+PEERDNS="{{ ifcfg_item.value.peerdns }}"
 {% endif %}
-{% if item.value.dns1 is defined %}
-DNS1="{{ item.value.dns1 }}"
+{% if ifcfg_item.value.dns1 is defined %}
+DNS1="{{ ifcfg_item.value.dns1 }}"
 {% endif %}
-{% if item.value.dns2 is defined %}
-DNS2="{{ item.value.dns2 }}"
+{% if ifcfg_item.value.dns2 is defined %}
+DNS2="{{ ifcfg_item.value.dns2 }}"
 {% endif %}
-{% if item.value.srcaddr is defined %}
-SRCADDR="{{ item.value.srcaddr }}"
+{% if ifcfg_item.value.srcaddr is defined %}
+SRCADDR="{{ ifcfg_item.value.srcaddr }}"
 {% endif %}
